@@ -9,14 +9,41 @@
 import SwiftUI
 
 struct LogbookView: View {
-  
-  var body: some View {
-    Text("Hello Swift Alps 2019!")
-  }
+    let piste = Piste.pistes.first!
+    
+    @State var logs = Log.randomLogs
+    
+    var body: some View {
+        VStack {
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(Piste.pistes) { piste in
+                        PisteCard(piste: piste)
+                            .onTapGesture {
+                                print(piste.name)
+                            }
+                    }
+                }
+                .padding()
+            }
+            
+            List() {
+                ForEach(logs) { log in
+                    LogView(log: log)
+                }.onDelete { set in
+                    set.forEach { index in
+                        self.logs.remove(at: index)
+                    }
+                }
+            }
+            
+        }
+    }
+    
 }
 
 struct LogbookView_Previews: PreviewProvider {
-  static var previews: some View {
-    return LogbookView()
-  }
+    static var previews: some View {
+        return LogbookView()
+    }
 }

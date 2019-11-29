@@ -24,6 +24,9 @@
 		8BE303FC236E068500EBDC44 /* LogbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE303FB236E068500EBDC44 /* LogbookView.swift */; };
 		8BE30401236E07AB00EBDC44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE30400236E07AB00EBDC44 /* User.swift */; };
 		8BE30406236E115C00EBDC44 /* slopesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BE30405236E115C00EBDC44 /* slopesData.json */; };
+		99DE862723917376007C867C /* SquarePeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE862623917376007C867C /* SquarePeg.swift */; };
+		99DE8629239173D7007C867C /* PisteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE8628239173D7007C867C /* PisteCard.swift */; };
+		99DE862B2391770F007C867C /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE862A2391770F007C867C /* LogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		8BE303FB236E068500EBDC44 /* LogbookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogbookView.swift; path = UI/LogbookView.swift; sourceTree = "<group>"; };
 		8BE30400236E07AB00EBDC44 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8BE30405236E115C00EBDC44 /* slopesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slopesData.json; sourceTree = "<group>"; };
+		99DE862623917376007C867C /* SquarePeg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquarePeg.swift; sourceTree = "<group>"; };
+		99DE8628239173D7007C867C /* PisteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PisteCard.swift; sourceTree = "<group>"; };
+		99DE862A2391770F007C867C /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				8BE303E3236E010700EBDC44 /* SceneDelegate.swift */,
 				8B06E8E6238B706600880663 /* AppState.swift */,
 				8BE303FB236E068500EBDC44 /* LogbookView.swift */,
+				99DE862623917376007C867C /* SquarePeg.swift */,
+				99DE8628239173D7007C867C /* PisteCard.swift */,
+				99DE862A2391770F007C867C /* LogView.swift */,
 				8B7F869423914C6300219211 /* Views */,
 				8B06E8E8238BD60900880663 /* View Models */,
 				8BF1C426236E2AE700F310F0 /* Helpers */,
@@ -217,13 +226,16 @@
 				8BDA91802389569C00E0EE29 /* TimeInterval+Extensions.swift in Sources */,
 				8B871E7F23899CB70076CC03 /* Run.swift in Sources */,
 				8B06E8E7238B706600880663 /* AppState.swift in Sources */,
+				99DE862B2391770F007C867C /* LogView.swift in Sources */,
 				8BE30401236E07AB00EBDC44 /* User.swift in Sources */,
 				8BDD4CE4236EFA5200579094 /* UserDefaults+Extensions.swift in Sources */,
 				8BE303FC236E068500EBDC44 /* LogbookView.swift in Sources */,
 				8B871E7B23898E7F0076CC03 /* Log.swift in Sources */,
 				8B7F869623914C7500219211 /* PrivacyPolicyView.swift in Sources */,
 				8B871E7D23899CA70076CC03 /* Piste.swift in Sources */,
+				99DE862723917376007C867C /* SquarePeg.swift in Sources */,
 				8BDD4CE8236F038700579094 /* Treats.swift in Sources */,
+				99DE8629239173D7007C867C /* PisteCard.swift in Sources */,
 				8B06E8EA238BD72E00880663 /* ProfileVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
